@@ -37,8 +37,18 @@ const userLogin = async (req, res) => {
     res.send('user login');
 }
 
+const getAllUsers = async (req, res) => {
+    try {
+        const data = await User.find();
+        res.send(data);
+    } catch (error) {   
+        console.log(error);
+    }
+}
 
 
 
-module.exports = { userRegister, userLogin };
+
+
+module.exports = { userRegister, userLogin, getAllUsers };
 //user login
