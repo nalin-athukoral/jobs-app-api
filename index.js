@@ -20,6 +20,6 @@ app.get('/', (req, res) => {
 app.use('/api', user);
 
 app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+  console.log(`Server listening on port changed ${PORT}`);
 }); 
 
